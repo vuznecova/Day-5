@@ -1,0 +1,16 @@
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class MainTest {
+
+    @Test
+    void withdraw() {
+        assertEquals(100, new BankAccount(500).withdraw(400));
+    }
+
+    @Test
+    void deposit() {
+        assertEquals(500, new BankAccount(300).deposit(200));
+    }
+}
